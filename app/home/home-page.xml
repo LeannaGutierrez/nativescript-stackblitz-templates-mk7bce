@@ -1,0 +1,12 @@
+<Page>
+  <ActionBar title="User Login Page" />
+  <ScrollView>
+    <StackLayout>
+      <Label text="     Enter your information below" />
+      <TextField hint="Name of Account Holder" keyboardType="url" returnKeyType="next" />
+      <TextField hint="Number of Account Holder" keyboardType="number" returnKeyType="next" />
+      <TextField hint="Password" secure="true" returnKeyType="done" />
+      <Button text="View Service Charges" tap="onTap" />
+    </StackLayout>
+  </ScrollView>
+</Page>
