@@ -16,7 +16,7 @@ export function onCalc(args) {
         var charge = txtView1.text * 0.05;
       }
 
-      Dialogs.action('Bill is: $' + charge);
+      Dialogs.action('Bill: $' + charge);
     }
   }
 }
