@@ -7,6 +7,7 @@ export function onCalc(args) {
     var txtView1 = getViewById(parent, 'NumMin');
     var txtView = getViewById(parent, 'CatID');
 
+    //Calculate bill according to Category Option Chosen
     if (txtView1) {
       if (txtView.text === '1') {
         var charge = txtView1.text * 0.07;
@@ -15,7 +16,7 @@ export function onCalc(args) {
       } else if (txtView.text === '3') {
         var charge = txtView1.text * 0.05;
       }
-
+      //Output bill to screen
       Dialogs.action('Bill: $' + charge);
     }
   }

@@ -1,5 +1,6 @@
 import { Frame } from '@nativescript/core';
 
+//Function for page transition upon user interaction with button
 export function onTap() {
   var navigationEntry = {
     moduleName: './info/info-page',
