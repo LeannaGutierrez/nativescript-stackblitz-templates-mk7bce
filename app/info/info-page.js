@@ -15,12 +15,8 @@ export function onCalc(args) {
       } else if (txtView.text === '3') {
         var charge = txtView1.text * 0.05;
       }
-    }
 
-    let alertProperties = {
-      title: 'Phone Bill',
-      message: 'Your total cost is: $' + charge.toFixed(2),
-      okButtonText: 'Slay!',
-    };
+      Dialogs.action('Bill is: $' + charge);
+    }
   }
 }

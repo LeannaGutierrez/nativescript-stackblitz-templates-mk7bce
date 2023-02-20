@@ -1,0 +1,16 @@
+<Page> 
+    <ActionBar title="Phone Service Provider" /> 
+    <StackLayout>
+        <Label text="    Phone Service Charges" />
+        <Label text="    Category ID     Rate Category                                Rate per Minute" textDecoration= "underline" />
+        <Label text="             1               Daytime (6:00 a.m. - 5:59 p.m.)          $0.07" />
+        <Label text="             2               Evening (6:00 p.m. - 11:59 p.m.)         $0.12" />
+        <Label text="             3               Off-Peak (12:00 a.m. - 5:59 a.m.)       $0.05" />
+<Label text="    Enter call service information below" />
+        <TextField id="CatID" hint="Category ID" maxLength="1" keyboardType="number" returnKeyType="next" />
+        <TextField id="NumMin" hint="Number of Minutes of Call" maxLength="5" keyboardType="number" returnKeyType="done" />
+
+
+        <Button text="Calculate Bill" tap="onCalc" />
+    </StackLayout>
+</Page>
